@@ -76,10 +76,10 @@ const ElementsStack = createStackNavigator({
 });
 
 const ArticlesStack = createStackNavigator({
-  Articles: {
+  Feed: {
     screen: Articles,
     navigationOptions: ({ navigation }) => ({
-      header: <Header title="Articles" navigation={navigation} />
+      header: <Header title="Feed" navigation={navigation} />
     })
   }
 },{
@@ -153,7 +153,7 @@ const AppStack = createDrawerNavigator(
       screen: ProfileStack,
       navigationOptions: navOpt => ({
         drawerLabel: ({ focused }) => (
-          <DrawerItem focused={focused} screen="Profile" title="Profile" />
+          <DrawerItem focused={focused} screen="Profile" title="Perfil" />
         )
       })
     },
@@ -161,23 +161,23 @@ const AppStack = createDrawerNavigator(
       screen: Register,
       navigationOptions: navOpt => ({
         drawerLabel: ({ focused }) => (
-          <DrawerItem focused={focused} screen="Register" title="Account" />
+          <DrawerItem focused={focused} screen="Register" title="Minha Conta" />
         )
       })
     },
-    Elements: {
+    Lojas: {
       screen: ElementsStack,
       navigationOptions: navOpt => ({
         drawerLabel: ({ focused }) => (
-          <DrawerItem focused={focused} screen="Elements" title="Elements" />
+          <DrawerItem focused={focused} screen="Elements" title="Lojas" />
         )
       })
     },
-    Articles: {
+    Feed: {
       screen: ArticlesStack,
       navigationOptions: navOpt => ({
         drawerLabel: ({ focused }) => (
-          <DrawerItem focused={focused} screen="Articles" title="Articles" />
+          <DrawerItem focused={focused} screen="Articles" title="Feed" />
         )
       })
     }

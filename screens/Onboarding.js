@@ -32,19 +32,19 @@ class Onboarding extends React.Component {
         <Block flex space="between" style={styles.padded}>
             <Block flex space="around" style={{ zIndex: 2 }}>
               <Block style={styles.title}>
-                <Block>
+                {/* <Block>
                   <Text color="white" size={60}>
                     Olá
                   </Text>
                 </Block>
                 <Block>
                   <Text color="white" size={50}>
-                   Matheus!
+                  
                   </Text>
-                </Block>
+                </Block> */}
                 <Block style={styles.subTitle}>
                   <Text color="white" size={16}>
-                  App de compras e ofertas seja bem vindo.
+                 O seu app do comercio local.
                   </Text>
                 </Block>
               </Block>
@@ -52,7 +52,7 @@ class Onboarding extends React.Component {
                 <Button
                   style={styles.button}
                   color={argonTheme.COLORS.SECONDARY}
-                  onPress={() => navigation.navigate("Account")}
+                  onPress={() => navigation.navigate("Home")}
                   textStyle={{ color: argonTheme.COLORS.BLACK }}
                 >
                  Continuar

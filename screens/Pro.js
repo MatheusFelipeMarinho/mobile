@@ -13,8 +13,8 @@ export default class Pro extends React.Component {
     return (
       <Block flex style={styles.container}>
         <StatusBar barStyle="light-content" />
-        <Block flex>
-          <ImageBackground
+        {/* <Block flex> */}
+          {/* <ImageBackground
             source={Images.Pro}
             style={{ flex: 1, height: height, width, zIndex: 1 }}
           />
@@ -58,7 +58,7 @@ export default class Pro extends React.Component {
               </Button>
             </Block>
           </Block>
-        </Block>
+        </Block> */}
       </Block>
     );
   }

@@ -62,7 +62,8 @@ const styles = StyleSheet.create({
     paddingBottom: theme.SIZES.BASE,
     paddingTop: theme.SIZES.BASE * 3,
     justifyContent: 'center'
-  }
+  },
+  
 });
 
 export default Menu;
